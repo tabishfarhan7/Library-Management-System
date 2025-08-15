@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Library Management System</h1>
+            <div id="user-status">Not logged in</div>
+        </header>
+
+        <div id="login-section" class="card">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Your email">
+            <button id="login-btn">Login</button>
+            <button id="register-btn">Register</button>
+        </div>
+
+        <div id="main-section" class="hidden">
+            <div class="card">
+                <h2>Search Books</h2>
+                <input type="text" id="search-input" placeholder="Search by title, author or genre">
+                <button id="search-btn">Search</button>
+                <div id="search-results" class="results"></div>
+            </div>
+
+            <div class="card">
+                <h2>Borrow/Return Books</h2>
+                <div id="user-books" class="results"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
